@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "linkdevopsclusters-terraform-state"
-    key            = "linkdevopsclusters.tfstate"
+    bucket         = "${var.clusters_name_prefix}-terraform-state"
+    key            = "${var.clusters_name_prefix}.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "linkdevopsclusters-terraform-state-lock-dynamodb"
+    dynamodb_table = "${var.clusters_name_prefix}-terraform-state-lock-dynamodb"
   }
   required_providers {
     aws = {

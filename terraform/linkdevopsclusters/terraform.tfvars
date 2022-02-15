@@ -13,7 +13,7 @@ public_subnet_ids = [
   "subnet-xxxxxxxx",
 ]
 vpc_id = "vpc-xxxxxxxxxx"
-clusters_name_prefix  = "packtclusters"
+clusters_name_prefix  = "linkdevopsclusterss"
 cluster_version       = "1.18"
 workers_instance_type = "t3.medium"
 workers_number_min    = 2
